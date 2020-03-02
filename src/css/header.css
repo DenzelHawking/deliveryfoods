@@ -1,0 +1,66 @@
+#header {
+  position: fixed;
+  width: 100%;
+  border: 1px solid #e3e4e6;
+  height: 75px;
+  display: flex;
+  color: #8d8d8d;
+  background: #fff;
+  z-index: 1;
+}
+
+#header > div {
+  border: 1px solid #e3e4e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 300px;
+}
+
+.delivery-address {
+  width: 100%;
+}
+
+#header i.fas {
+  margin-right: 5px;
+}
+
+.delivery-address form {
+  height: 100%;
+  width: 90%;
+}
+
+.delivery-address input {
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.log-in, .basket-button {
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 750px) {
+  .log-in, .basket-button {
+    width: 300px;
+  }
+
+  .log-in:after {
+    content: 'Войти';
+  }
+
+  .basket-button:after {
+    content: 'Корзина';
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .log-in, .basket-button {
+    width: 100px;
+  }
+}

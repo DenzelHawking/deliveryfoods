@@ -1,0 +1,25 @@
+ body {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  min-height: 100vh;
+}
+
+body.open-log-in-popup {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  color: inherit;
+  outline: none;
+  font-size: initial;
+}
+
+input::placeholder {
+  color: inherit;
+}

@@ -1,0 +1,146 @@
+.filter {
+    position: relative;
+    border: 1px solid #e3e4e6;
+    border-radius: 30px;
+    text-align: center;
+    color: #8d8d8d;
+    cursor: pointer;
+    transition: .3s;
+    user-select: none;
+}
+  
+.filter:hover {
+    border-color: #bebebe;
+}
+  
+.filter i {
+    transition: .3s;
+}
+  
+.filter.openned {
+    border-color: #bebebe;
+}
+  
+.filter.openned i {
+    transform: rotate(-180deg);
+}
+  
+.filter__form {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #bebebe;
+    z-index: 1;
+    box-sizing: border-box;
+    color: #2e2e33;
+    cursor: default;
+}
+  
+.filter.openned .filter__form {
+    display: block;
+}
+
+
+.filters__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.custom-checkbox .check {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 10px;
+    color: #fff;
+    transition: .2s;
+}
+
+.custom-checkbox:hover .check {
+    border-color: #2e2e33;
+}
+
+.custom-checkbox.active-filter .check {
+    border-color: #2e2e33;
+    background: #2e2e33;
+}
+
+.apply-filters {
+    background: #10b93d;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.apply-filters:hover {
+    background: #14a93c;
+}
+
+
+@media screen and (min-width: 767px) {
+    .filter {
+      height: 30px;
+      width: 120px;
+      line-height: 30px;
+    }
+  
+    .filter i {
+      font-size: 12px;
+      width: 12px;
+      height: 12px;
+    }
+
+    .filter__form {
+        top: calc(100% + 5px);
+        width: 350px;
+        padding: 20px 15px;
+    }
+}
+  
+@media screen and (max-width: 767px) {
+    .filter {
+      height: 20px;
+      width: 90px;
+      line-height: 20px;
+      font-size: 14px;
+    }
+  
+    .filter i {
+      font-size: 9px;
+      width: 9px;
+      height: 9px;
+    }
+  
+    .filter__form {
+        top: calc(100% + 10px);
+        width: 85vw;
+        padding: 15px 10px;
+    }
+}
+  
+@media screen and (min-width: 992px) {
+    .filter__form {
+      left: 0; 
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    .filter__form {
+      right: 0; 
+    }
+}

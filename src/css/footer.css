@@ -1,0 +1,40 @@
+#footer {
+    height: 250px;
+    background: #fff;
+    padding: 20px 7.5%;
+    box-sizing: border-box;
+}
+
+.social {
+    width: 130px;
+}
+
+.social-text {
+    font-size: 12px;
+    color: #8d8d8d;
+    padding: 5px 0;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-list li {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    color: #8d8d8d;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.social-list li:hover {
+    background: #8d8d8d;
+    color: #f0f0f0;
+}
